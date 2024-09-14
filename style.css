@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    position: relative;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+input[type="number"], input[type="text"], input[type="password"], input[type="email"], button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.message {
+    margin-top: 10px;
+}
+.admin-panel {
+    display: none;
+    position: fixed;
+    top: 20%;
+    right: 10px;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+.admin-panel input[type="password"] {
+    width: calc(100% - 22px); /* Ajustar el ancho para acomodar el padding */
+}
+.admin-panel button {
+    width: 100%;
+    background-color: #28a745;
+}
+.admin-panel button:hover {
+    background-color: #218838;
+}
+.admin-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+.price-display {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+}
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 32px;
+    color: #007bff;
+    font-weight: bold;
+}
+.support-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+.support-button:hover {
+    background: #218838;
+}
+.details-panel, .transfer-panel, .confirmation-panel {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    z-index: 1000;
+}
+.details-panel p, .transfer-panel p, .confirmation-panel p {
+    margin: 10px 0;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senda - Plataforma de USDT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">Senda</div>
+    <div class="container" id="main-form">
+        <h1>Compra de USDT</h1>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" placeholder="Ingrese su correo electrónico">
+        <label for="amount">Cantidad de USDT a Comprar:</label>
+        <input type="number" id="amount" placeholder="Ingrese cantidad" step="0.01" min="0">
+        <label for="wallet">Dirección de Wallet TRC20:</label>
+        <input type="text" id="wallet" placeholder="Ingrese dirección de wallet">
+        <button id="pay">Pagar</button>
+        <div class="message" id="message"></div>
+        <div id="price-display" class="price-display">Precio USDT: $<span id="usdt-price">0.00</span></div>
+        <div class="footer-text">Compra por la senda segura</div>
+    </div>
+
+    <button class="admin-button" id="admin-toggle">🔒</button>
+    <div class="admin-panel" id="admin-panel">
+        <h2>Inicio de Sesión</h2>
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" placeholder="Ingrese usuario">
+        <label for="admin-password">Contraseña:</label>
+        <input type="password" id="admin-password" placeholder="Ingrese contraseña">
+        <button id="login">Iniciar Sesión</button>
+        <div id="login-message" class="message"></div>
+        <div id="price-section" style="display: none;">
+            <h2>Actualizar Precio de USDT</h2>
+            <label for="price">Nuevo Precio de USDT:</label>
+            <input type="number" id="price" placeholder="Ingrese nuevo precio" step="0.01" min="0">
+            <button id="update-price">Actualizar Precio</button>
+            <div id="admin-message" class="message"></div>
+        </div>
+    </div>
+
+    <div class="details-panel" id="details-panel">
+        <h2>Detalles de Pago</h2>
+        <p id="payment-details"></p>
+        <button id="proceed-payment">Pagar</button>
+    </div>
+
+    <div class="transfer-panel" id="transfer-panel">
+        <h2>Haga su Transferencia</h2>
+        <p>Detalles de la Tarjeta: 8739 7481 3784 7878</p>
+        <p>Por favor, realice su transferencia a la tarjeta arriba indicada. Asegúrese de que todos los datos estén correctos.</p>
+        <button id="confirm-payment">Ya Pagué</button>
+        <button id="cancel-transfer">Cancelar</button>
+    </div>
+
+    <div class="confirmation-panel" id="confirmation-panel">
+        <h2>Confirmación de Pago</h2>
+        <p>Su compra está en proceso y puede demorar algunos minutos.</p>
+        <p>Para soporte, envíe un correo a: soportedesenda@gmail.com</p>
+    </div>
+
+    <button class="support-button" id="support-button">?</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
